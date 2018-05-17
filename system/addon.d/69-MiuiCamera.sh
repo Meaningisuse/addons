@@ -23,6 +23,12 @@ etc/people_gender.dat
 etc/score_bg.png
 etc/score_icon.png
 etc/watermark_font_2300_3199.dat
+priv-app/MiuiCamera/lib/arm64/libmorpho_panorama_gp.so
+priv-app/MiuiCamera/lib/arm64/libmorpho_panorama.so
+priv-app/MiuiCamera/lib/arm64/libmorpho_group_portrait.so
+priv-app/MiuiCamera/lib/arm64/libmorpho_groupshot.so
+priv-app/MiuiCamera/lib/arm64/libmorpho_memory_allocator.so
+priv-app/MiuiCamera/lib/arm64/libCameraEffectJNI.so
 priv-app/MiuiCamera/MiuiCamera.apk
 EOF
 }
