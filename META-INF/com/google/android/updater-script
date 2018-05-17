@@ -2,6 +2,7 @@ ui_print("Installing MiuiCamera...");
 mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/system", "/system", "");
 delete_recursive("/system/priv-app/MiuiCamera");
 package_extract_dir("system", "/system");
+set_metadata_recursive("/system/addon.d", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata_recursive("/system/etc", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata_recursive("/system/priv-app", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 unmount("/system");
